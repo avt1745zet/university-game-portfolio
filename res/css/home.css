@@ -1,0 +1,11 @@
+﻿#homeCharacter {
+    position:absolute;
+    left:5px;
+    bottom:5px;
+}
+
+#homeText {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+}

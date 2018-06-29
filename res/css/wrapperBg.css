@@ -1,0 +1,14 @@
+﻿/*!
+ * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+ */
+
+#wrapperBg {
+    background-image: url(../img/Title.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-image 2.0s linear;
+}
