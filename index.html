@@ -4,206 +4,96 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="icon" href="./icon/DENO_ICON_1024.png" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="res/icon/favicon_512.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./res/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- 3rd css party -->
-    <link rel="stylesheet" href="./res/css/magnific-popup.css" />
+    <link rel="stylesheet" href="res/css/magnific-popup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link type="text/css" rel="stylesheet" href="./res/css/ContentSpace.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/scrollbar.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/wrapperBg.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/footer.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/loading.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/home.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/video.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/contact.css" />
-    <link type="text/css" rel="stylesheet" href="./res/css/download.css" />
-
-    <title>Linya's Portfolio</title>
+    <link type="text/css" rel="stylesheet" href="res/css/scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="res/css/main.css" />
+    <!-- Title -->
+    <title>羊羽的遊戲</title>
 </head>
-<body id="wrapperBg">
+<body>
+    <div id="wrapper">
 
-    <div id="loading">
-        <img id="loadingText" src="res/img/loading/loadingText.gif" class="img-fluid" width="150" />
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand " href="#">
+                    羊羽的遊戲
+                </a>
+
+                <!-- toggle for better mobile display -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collect nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse " id="navbarCollapse1">
+                    <ul class="nav navbar-nav ml-auto text-light text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                大四
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                大三
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                大二
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                大一
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header class="container-fluid">
+            <div class="row">
+
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="container text-light">
+            <!-- .row -->
+            <div class="row">
+
+            </div>
+            <!-- /.row -->
+        </main>
+
+        <!-- footer -->
+        <footer class="container-fluid"></footer>
+        <!-- footer -->
     </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand nav-btn" href="#" data-target="#content-home">
-                <img src="res/img/Logo.png" class="img-fluid active" width="100" alt="LOGO" />
-            </a>
-
-            <!-- toggle for better mobile display -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse1">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Collect nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="navbarCollapse1">
-                <ul class="nav navbar-nav  ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-danger" id="introduction-tab" data-toggle="dropdown" href="#">
-                            Introduction
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item nav-btn" href="#" data-target="#content-story">
-                                Story
-                            </a>
-                            <a class="dropdown-item nav-btn" href="#" data-target="#content-characters">
-                                Characters
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-danger" id="gallery-tab" data-toggle="dropdown" href="#">
-                            Gallery
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="nav-btn dropdown-item" href="#" data-target="#content-wallpaper">
-                                Wallpaper
-                            </a>
-                            <a class="nav-btn dropdown-item" href="#" data-target="#content-screenshot">
-                                Screenshot
-                            </a>
-                            <a class="nav-btn dropdown-item" href="#" data-target="#content-videos">
-                                Video
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger nav-btn" href="#" data-target="#content-download">
-                            Download
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger nav-btn" href="#" data-target="#content-contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- container -->
-    <main class="container fill" style="padding-top:100px">
-
-        <!-- Content space -->
-        <div id="contentSpace" class="col-10 text-white">
-
-            <!-- home page -->
-            <div id="content-home" class="row">
-                <h1 class="text-center col-12">
-                    Welcome!
-                </h1>
-                <img id="homeCharacter" src="./res/img/home/character.png" class="col-sm-4 col-8 img-fluid " />
-                <div id="homeText" class="col-sm-8 col-4">I will lead you to this fantasy world!</div>
-            </div>
-
-            <!-- story page -->
-            <div id="content-story">
-                <div class="text-white">
-                    <h1 class="text-center">
-                        About me
-                    </h1>
-                    <br />
-                    <p class="text-center">
-                        I just say YEEEEEEEEEEEEEEEEEEEEEE...
-                    </p>
-                </div>
-            </div>
-
-            <!-- characters page -->
-            <div id="content-characters">
-                <h1 class="text-center">
-                    Characters
-                </h1>
-            </div>
-
-            <!-- wallpaper page -->
-            <div id="content-wallpaper">
-                <h1 class="text-center">
-                    Wallpaper
-                </h1>
-            </div>
-
-            <!-- screenshot page -->
-            <div id="content-screenshot">
-                <h1 class="text-center">
-                    Screenshot
-                </h1>
-            </div>
-
-            <!-- video page -->
-            <div id="content-videos">
-                <div class="video-cover">
-                    <a class="video-content" href="https://www.youtube.com/watch?v=yyx8V5zxVtE">
-                        <img class="video-play" src="./res/img/video/play.png" />
-                    </a>
-                </div>
-            </div>
-
-            <!-- download page -->
-            <div id="content-download">
-                <h1 class="text-center">
-                    Download
-                </h1>
-                <a id="download-button" class="btn btn-info" target="_blank" href="https://drive.google.com/file/d/0B1QEIH-XycPAMTZ5X2xvY255V0E/view?usp=sharing">Start Download</a>
-            </div>
-
-            <!-- contact page -->
-            <div id="content-contact">
-                <div class="text-white">
-                    <h1 class="text-center">
-                        Contact
-                    </h1>
-                    <form>
-                        <div class="form-group">
-                            <label for="questionSelect">Question</label>
-                            <select name="question" id="questionSelect" class="custom-select">
-                                <option value="Bug report"> Bug report </option>
-                                <option value="Level question"> Level question </option>
-                                <option value="Other question"> Other question </option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="questionContent">Content</label>
-                            <textarea class="form-control" id="question-content" placeholder="Content"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- /.Content -->
-    </main>
-    <!-- /.container -->
-
-    <footer class="footer">
-        <div class="container text-center ">
-            <span class="text-white"> ©2018 Linya Studio. All Rights Reserved.</span>
-        </div>
-    </footer>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="./res/js/lib/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="./res/js/lib/popper.min.js"></script>
-    <script type="text/javascript" src="./res/js/lib/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- 3rd party-->
     <script src="./res/js/lib/jquery.magnific-popup.min.js"></script>
     <script src="./res/js/lib/jquery.easing.min.js"></script>
 
     <!-- Local js-->
     <script type="text/javascript" src="./res/js/main.js"></script>
-    <script type="text/javascript" src="./res/js/loading.js"></script>
-    <script type="text/javascript" src="./res/js/wallPaper.js"></script>
 </body>
 </html>
