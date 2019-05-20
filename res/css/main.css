@@ -2,13 +2,6 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-header {
-    padding-top: 90px;
-}
-
-main {
-    margin-top: 20px;
-}
 /*footer*/
 html, body {
     /* 設定body高度為100% 拉到視窗可視的大小 */

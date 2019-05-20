@@ -49,7 +49,7 @@
         var targetContentElement = $(this).data('target');
         var currentContentElement = '#' + currentContent.attr('id');
 
-        if (targetContentElement != currentContentElement && !contentFading) {
+        if (targetContentElement !== currentContentElement && !contentFading) {
             contentFading = true;
 
             currentContent.fadeOut(500, function () {
