@@ -2,16 +2,22 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-/*footer*/
 html, body {
     /* 設定body高度為100% 拉到視窗可視的大小 */
     height: 100%;
 }
 
+.navbar .active {
+    font-weight:bold;
+    border: 1px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
 #wrapper {
     min-height: 100%;
     position: relative;
-    padding-bottom: 50px;
 }
 
 footer::before {
@@ -27,7 +33,7 @@ footer::after {
 footer {
     height: 50px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     background-color: rgba(5,5,5,.5);
     text-align: center;
     line-height: 50px; /* Vertically center the text there */
@@ -36,7 +42,7 @@ footer {
 /* wrapper */
 
 #wrapper {
-    background-color:lightgray;
+    background-color: lightgray;
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;

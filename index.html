@@ -21,7 +21,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar" style="background-color:rgba(5, 5, 5,.5)">
             <div class="container">
 
                 <!-- Logo -->
@@ -35,25 +35,25 @@
                 </button>
 
                 <!-- Collect nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse " id="navbarCollapse1">
+                <div class="collapse navbar-collapse" id="navbarCollapse1">
                     <ul class="nav navbar-nav ml-auto text-light text-center">
                         <li class="nav-item">
-                            <a class="nav-link text-light js-scroll-trigger" href="#level-4">
+                            <a class="nav-link js-scroll-trigger" href="#level-4">
                                 大四
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light js-scroll-trigger" href="#level-3">
+                            <a class="nav-link js-scroll-trigger" href="#level-3">
                                 大三
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light js-scroll-trigger" href="#level-2">
+                            <a class="nav-link js-scroll-trigger" href="#level-2">
                                 大二
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light js-scroll-trigger" href="#level-1">
+                            <a class="nav-link js-scroll-trigger" href="#level-1">
                                 大一
                             </a>
                         </li>
@@ -65,36 +65,55 @@
         </nav>
 
         <!-- Header -->
-        <header class="container-fluid bg-primary" id="top">
+        <header class="container-fluid" id="top">
             <div class="row">
                 <div class="col-12 vh-100" style="background-image:url(res/img/header_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
-
+                  
                 </div>
             </div>
         </header>
 
         <!-- Main -->
-        <main class="container-fluid">
+        <main>
             <!-- 大四作品 -->
-            <div class="row">
-                <div class="col-12 bg-success vh-100" id="level-4" style="background-image:url(res/img/level_4_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+            <section id="level-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 vh-100" style="background-image:url(res/img/level_4_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
             <!-- 大三作品 -->
-            <div class="row">
-                <div class="col-12 bg-info vh-100" id="level-3" style="background-image:url(res/img/level_3_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+            <section id="level-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 vh-100" id="level-3" style="background-image:url(res/img/level_3_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
             <!-- 大二作品 -->
-            <div class="row">
-                <div class="col-12 bg-success vh-100" id="level-2" style="background-image:url(res/img/level_2_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+            <section id="level-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 vh-100" id="level-2" style="background-image:url(res/img/level_2_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
             <!-- 大一作品 -->
-            <div class="row">
-                <div class="col-12 bg-info vh-100" id="level-1" style="background-image:url(res/img/level_1_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+            <section id="level-1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 vh-100" id="level-1" style="background-image:url(res/img/level_1_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <!-- Footer -->
