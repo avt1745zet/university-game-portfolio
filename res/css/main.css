@@ -1,5 +1,6 @@
 ﻿body {
     font-family: 'Noto Sans TC', sans-serif;
+    overflow-x:hidden;
 }
 
 html, body {
@@ -48,4 +49,15 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     transition: background-image 2.0s linear;
+}
+
+.intro {
+    background-color: rgba(255,255,255,.8);
+    z-index:99;
+    height: 100%;
+    width: 100%;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }

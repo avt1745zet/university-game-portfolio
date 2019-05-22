@@ -61,7 +61,7 @@
             });
         }
         $('#navbarCollapse1').collapse('hide');
-    })
+    });
 
     $('.video-content').magnificPopup({
         disableOn: 700,
@@ -72,7 +72,7 @@
 
         fixedContentPos: false
     });
-})
+});
 
 
 
