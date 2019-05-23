@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (event) {
         event.preventDefault();
 
-        $("#navbarCollapse1").collapse('hide');
+        $("#navbarCollapse").collapse('hide');
 
         var target = $(this.getAttribute('href'));
 
@@ -18,20 +18,23 @@ $(document).ready(function () {
     Auto hide navbar collapse.
     */
     $(document).click(function () {
-        $("#navbarCollapse1").collapse('hide');
+        $("#navbarCollapse").collapse('hide');
     });
 
     $(window).scroll(function () {
-        $("#navbarCollapse1").collapse('hide');
+        $("#navbarCollapse").collapse('hide');
     });
     /*
     Scroll spy.
     */
-    $("body").scrollspy({ target: "#navbar", offset: 60 });
+    $("body").scrollspy({ target: "#navbar", offset: 300 });
 
-    $(window).on("activate.bs.scrollspy", function (_e, obj) {
-        console.log($(obj.relatedTarget));
-        var target = $(obj.relatedTarget).find(".intro");
-        target.fadeOut(3000);
+    //$(".level-header .text-center").css({ opacity: 0 });
+    $(".level-header .text-center").animate({ top: "10px", opacity: 0 }, 'slow');
+
+    $(window).on("activate.bs.scrollspy", function (_e, event) {
+        var target = $(event.relatedTarget).siblings(".level-header");
+        var targetDiv = $(target).find(".text-center");
+        $(targetDiv).animate({ top: "0px", opacity: 1 }, 'slow');
     });
 });
