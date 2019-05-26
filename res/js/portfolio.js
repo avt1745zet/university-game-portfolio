@@ -1,6 +1,4 @@
-﻿
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
     /*
     Scroll page.
     */
@@ -27,14 +25,31 @@ $(document).ready(function () {
     /*
     Scroll spy.
     */
-    $("body").scrollspy({ target: "#navbar", offset: 300 });
+    $("body").scrollspy({ target: "#navbar", offset: 100 });
 
     //$(".level-header .text-center").css({ opacity: 0 });
     $(".level-header .text-center").animate({ top: "10px", opacity: 0 }, 'slow');
 
-    $(window).on("activate.bs.scrollspy", function (_e, event) {
-        var target = $(event.relatedTarget).siblings(".level-header");
-        var targetDiv = $(target).find(".text-center");
-        $(targetDiv).animate({ top: "0px", opacity: 1 }, 'slow');
+    $(window).scroll(function () {
+        $(".level-header").each(function () {
+            var target = this;
+            var targetDiv = $(target).find(".text-center");
+            elementHeightInWindow(this, 20, function () { show(targetDiv); });
+        });
+
+        function show(target) {
+            $(target).animate({ top: "0px", opacity: 1 }, 'slow');
+        }
     });
 });
+
+function elementHeightInWindow(target, percentage = 0, callback) {
+    var windowHeight = document.body.clientHeight;
+    var windowBottomScrollTop = $(window).scrollTop() + windowHeight;
+    $(target).each(function () {
+        var curPencentage = -(target.offsetTop - windowBottomScrollTop) / windowHeight * 100;
+        if (curPencentage > percentage) {
+            callback();
+        }
+    });
+}
