@@ -2,7 +2,7 @@
     /*
     Scroll page.
     */
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (event) {
+    $('a.js-scrollpage-trigger[href*="#"]:not([href="#"])').click(function (event) {
         event.preventDefault();
 
         $("#navbarCollapse").collapse('hide');
@@ -28,13 +28,12 @@
     $("body").scrollspy({ target: "#navbar", offset: 100 });
 
     //$(".level-header .text-center").css({ opacity: 0 });
-    $(".level-header .text-center").animate({ top: "10px", opacity: 0 }, 'slow');
+    $(".js-scroll-show").animate({ top: "10px", opacity: 0 }, 'slow');
 
     $(window).scroll(function () {
-        $(".level-header").each(function () {
+        $(".js-scroll-show").each(function () {
             var target = this;
-            var targetDiv = $(target).find(".text-center");
-            elementHeightInWindow(this, 20, function () { show(targetDiv); });
+            elementOffsetInWindow(target, 80, function () { show(target); });
         });
 
         function show(target) {
@@ -44,11 +43,26 @@
 });
 
 function elementHeightInWindow(target, percentage = 0, callback) {
-    var windowHeight = document.body.clientHeight;
+    var windowHeight = $(window).height();
     var windowBottomScrollTop = $(window).scrollTop() + windowHeight;
     $(target).each(function () {
-        var curPencentage = -(target.offsetTop - windowBottomScrollTop) / windowHeight * 100;
+        var targetHeight = $(target).height();
+        var targetCenter = $(target).offset().top + targetHeight / 2;
+        var curPencentage = -(targetCenter - windowBottomScrollTop) / windowHeight * 100;
         if (curPencentage > percentage) {
+            callback();
+        }
+    });
+}
+
+function elementOffsetInWindow(target, percentage = 0, callback) {
+    var windowHeight = $(window).height();
+    var windowCenterScrollTop = $(window).scrollTop() + windowHeight / 2;
+    $(target).each(function () {
+        var targetHeight = $(target).height();
+        var targetCenter = $(target).offset().top + targetHeight / 2;
+        var curPencentage = Math.abs(targetCenter - windowCenterScrollTop) / (windowHeight / 2) * 100;
+        if (curPencentage < percentage) {
             callback();
         }
     });

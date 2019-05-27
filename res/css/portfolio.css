@@ -1,47 +1,38 @@
 ﻿body {
     font-family: 'Noto Sans TC', sans-serif;
-    overflow-x:hidden;
-}
-
-html, body {
-    /* 設定body高度為100% 拉到視窗可視的大小 */
-    height: 100%;
+    background-image: url(../img/header_bg.jpg);
+    overflow-x: hidden;
 }
 
 .navbar .active {
-    font-weight:bold;
+    font-weight: bold;
     border: 1px solid;
     border-top: 0;
     border-left: 0;
     border-right: 0;
 }
 
-footer::before {
-    content: "©2019 Linya Studio.";
-    color: white;
-}
-
-footer::after {
-    content: " All Rights Reserved.";
-    color: white;
-}
-
-footer {
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    background-color: rgba(5,5,5,.5);
+#copyright {
+    text-shadow: black 0.1em 0.1em 0.2em;
     text-align: center;
-    line-height: 50px; /* Vertically center the text there */
 }
+
+    #copyright::before {
+        content: "©2019 Linya Studio.";
+        color: white;
+    }
+
+    #copyright::after {
+        content: " All Rights Reserved.";
+        color: white;
+    }
 
 /* wrapper */
 
 #body-wrap {
     min-height: 100%;
     position: relative;
-
-    background-image:url(../img/header_bg.jpg);
+    background-image: url(../img/header_bg.jpg);
     background-color: lightgray;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +41,7 @@ footer {
     transition: background-image 2.0s linear;
 }
 
-.gradient-top {
+.gradient-white-top {
     top: -89px;
     height: 90px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
@@ -60,8 +51,27 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-.gradient-bottom {
+.gradient-white-bottom {
     bottom: -89px;
+    height: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,1+100,0+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-black-bottom {
+    bottom: -89px;
+    height: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,1+100,0+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-bottom-block {
     height: 90px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,1+100,0+100 */
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
