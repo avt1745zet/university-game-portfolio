@@ -1,6 +1,14 @@
-﻿body {
+﻿html{
+    height:100%;
+}
+
+body {
     font-family: 'Noto Sans TC', sans-serif;
     background-image: url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -26,20 +34,6 @@
         content: " All Rights Reserved.";
         color: white;
     }
-
-/* wrapper */
-
-#body-wrap {
-    min-height: 100%;
-    position: relative;
-    background-image: url(../img/header_bg.jpg);
-    background-color: lightgray;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    transition: background-image 2.0s linear;
-}
 
 .gradient-white-top {
     top: -89px;
