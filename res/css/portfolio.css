@@ -1,15 +1,18 @@
-﻿html{
-    height:100%;
+﻿body {
+    font-family: 'Noto Sans TC', sans-serif;
+    overflow-x: hidden;
 }
 
-body {
-    font-family: 'Noto Sans TC', sans-serif;
-    background-image: url(../img/header_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow-x: hidden;
+#background{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    background-image:url(../img/header_bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    z-index:-999;
 }
 
 .navbar .active {
