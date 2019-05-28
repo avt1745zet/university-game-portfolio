@@ -26,11 +26,22 @@
     Scroll spy.
     */
     $("body").scrollspy({ target: "#navbar", offset: 100 });
+    /*
+    Scroll show.
+    */
+    hideJsScrollShow();// at start.
 
-    //$(".level-header .text-center").css({ opacity: 0 });
-    $(".js-scroll-show").animate({ top: "10px", opacity: 0 }, 'slow');
+    showJsScrollShowIfInWindow();// at start.
 
     $(window).scroll(function () {
+        showJsScrollShowIfInWindow();
+    });
+
+    function hideJsScrollShow() {
+        $(".js-scroll-show").css({ top: "10px", opacity: 0 });
+    }
+
+    function showJsScrollShowIfInWindow() {
         $(".js-scroll-show").each(function () {
             var target = this;
             elementOffsetInWindow(target, 80, function () { show(target); });
@@ -39,7 +50,7 @@
         function show(target) {
             $(target).animate({ top: "0px", opacity: 1 }, 'slow');
         }
-    });
+    }
 });
 
 function elementHeightInWindow(target, percentage = 0, callback) {
