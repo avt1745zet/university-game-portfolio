@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     /*
-    Scroll page.
-    */
+     * Scroll page.
+     */
     $('a.js-scrollpage-trigger[href*="#"]:not([href="#"])').click(function (event) {
         event.preventDefault();
 
@@ -13,8 +13,8 @@
         $("html, body").animate({ scrollTop: target.offset().top }, 1000, "easeInOutExpo");
     });
     /*
-    Auto hide navbar collapse.
-    */
+     * Auto hide navbar collapse.
+     */
     $(document).click(function () {
         $("#navbarCollapse").collapse('hide');
     });
@@ -23,12 +23,14 @@
         $("#navbarCollapse").collapse('hide');
     });
     /*
-    Scroll spy.
-    */
+     * Scroll spy.
+     */
     $("body").scrollspy({ target: "#navbar", offset: 100 });
+
     /*
-    Scroll show.
-    */
+     * Scroll show.
+     */
+
     hideJsScrollShow();// at start.
 
     showJsScrollShowIfInWindow();// at start.
@@ -51,6 +53,13 @@
             $(target).animate({ top: "0px", opacity: 1 }, 'slow');
         }
     }
+    /*
+     * Game selector.
+     */
+    $(".js-gameselector").click(function () {
+        var target = $(this).data("target");
+        $(target).carousel();
+    });
 });
 
 function elementHeightInWindow(target, percentage = 0, callback) {
