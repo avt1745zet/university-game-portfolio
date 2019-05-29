@@ -89,3 +89,7 @@
 .btn-outline-transparent:focus {
     box-shadow: none;
 }
+
+.text-shadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
