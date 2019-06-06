@@ -1,3 +1,29 @@
 ﻿body {
     font-family: 'Noto Sans TC', sans-serif;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+#loading {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 99;
+}
+
+    #loading img {
+        height: 128px;
+        width: 128px;
+        position: absolute;
+        left: calc(50% - 64px);
+        top: calc(50% - 64px);
+    }

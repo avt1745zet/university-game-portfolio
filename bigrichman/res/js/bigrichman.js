@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     /*
-     * 
+     * If mouse enter character-img, character-img will change img to gif.
      */
     $(".character-img").mouseenter(function () {
         var target = $(this);
@@ -19,7 +19,7 @@
         target.prop("src", newSrc);
     });
     /*
-     * 
+     * Fate card magnificPopup.
      */
     $('.fate-card').magnificPopup({
         type: 'image',
@@ -42,7 +42,7 @@
         }
     });
     /*
-     * 
+     * Chance card magnificPopup.
      */
     $('.chance-card').magnificPopup({
         type: 'image',
