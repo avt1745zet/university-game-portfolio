@@ -1,3 +1,11 @@
 ﻿body {
     font-family: 'Noto Sans TC', sans-serif;
 }
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.bg-black-50{
+    background-color:rgba(0,0,0,.5);
+}
