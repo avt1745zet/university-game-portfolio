@@ -16,4 +16,18 @@
 
         fixedContentPos: true
     });
+    /*
+     * Fade mask.
+     */
+    $(".popup-youtube").mouseenter(function () {
+        var mask = $(this).children(".mask");
+        mask.stop();
+        mask.animate({ opacity: "0" }, "slow");
+    });
+
+    $(".popup-youtube").mouseleave(function () {
+        var mask = $(this).children(".mask");
+        mask.stop();
+        mask.animate({ opacity: "1" }, "slow");
+    });
 }); 
