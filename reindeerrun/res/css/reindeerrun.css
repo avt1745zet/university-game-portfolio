@@ -1,4 +1,35 @@
 ﻿body {
     font-family: 'Noto Sans TC', sans-serif;
-    background-color:antiquewhite;
+}
+
+.bg-white-50{
+    background-color:rgba(255,255,255,.5);
+}
+
+.candy-icon-1,
+.candy-icon-2,
+.candy-icon-3,
+.candy-icon-4 {
+    display: inline-block;
+    height: 1.7rem;
+    width: 1.7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.candy-icon-1 {
+    background-image: url(../img/candy_1.png);
+}
+
+.candy-icon-2 {
+    background-image: url(../img/candy_2.png);
+}
+
+.candy-icon-3 {
+    background-image: url(../img/candy_3.png);
+}
+
+.candy-icon-4 {
+    background-image: url(../img/candy_4.png);
 }
