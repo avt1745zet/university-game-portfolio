@@ -102,6 +102,10 @@
     background-color:rgba(0,0,0,.3);
 }
 
+.bg-test {
+    background-color:rgb(233,235,238);
+}
+
 .box-shadow {
     border-radius: 30px;
     background: rgba(0,0,0,.3);
@@ -123,7 +127,6 @@ hr.level-break-clubs {
     border-top: solid .1rem;
     border-color: #343a40;
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
     margin-left: auto;
     margin-right: auto
 }
@@ -157,3 +160,12 @@ hr.level-break-clubs {
     hr.level-break-clubs::after {
         content: "♧";
     }
+
+.slash-icon::after{
+    content:"/";
+}
+
+.official-website-icon {
+    height: 1.3rem;
+    width: 1.3rem;
+}
