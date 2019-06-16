@@ -1,2 +1,2 @@
-# ¦Ï¦Ğªº¹CÀ¸
-This is a personal game portfolio website.
+# ç¾Šç¾½çš„éŠæˆ²
+This is a personal portfolio website project.

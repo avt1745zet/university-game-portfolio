@@ -57,13 +57,6 @@
             $(target).animate({ top: "0px", opacity: 1 }, 'slow');
         }
     }
-    /*
-     * Game selector.
-     */
-    $(".js-gameselector").click(function () {
-        var target = $(this).data("target");
-        $(target).carousel();
-    });
 });
 
 function elementOffsetInWindow(target, percentage = 10, callback) {

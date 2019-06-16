@@ -1,0 +1,32 @@
+﻿body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.title {
+    font-family: 'Audiowide', cursive;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.video iframe {
+    position: absolute;
+    background: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    border: white 1px solid;
+}
+
+    section header {
+        padding-bottom: 2rem;
+    }

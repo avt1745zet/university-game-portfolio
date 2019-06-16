@@ -169,3 +169,7 @@ hr.level-break-clubs {
     height: 1.3rem;
     width: 1.3rem;
 }
+
+.text-nobreak{
+    display:inline-block;
+}
