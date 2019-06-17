@@ -22,10 +22,6 @@
     border-right: 0;
 }
 
-.footer-link:hover {
-    text-decoration: none;
-}
-
 #copyright {
     text-shadow: black 0.1em 0.1em 0.2em;
     text-align: center;
@@ -81,6 +77,26 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a40', endColorstr='#343a4000',GradientType=0 ); /* IE6-9 */
 }
 
+.bg-aliceblue .gradient-top {
+    top: -89px;
+    height: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(240, 248, 255,0) 0%, rgba(240, 248, 255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(240, 248, 255,0) 0%,rgba(240, 248, 255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(240, 248, 255,0) 0%,rgba(240, 248, 255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff00', endColorstr='#f0f8ff',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-aliceblue .gradient-bottom {
+    bottom: -89px;
+    height: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,1+100,0+100 */
+    background: -moz-linear-gradient(top, rgba(240, 248, 255,1) 0%, rgba(240, 248, 255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(240, 248, 255,1) 0%,rgba(240, 248, 255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(240, 248, 255,1) 0%,rgba(240, 248, 255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', endColorstr='#f0f8ff00',GradientType=0 ); /* IE6-9 */
+}
+
 .fill {
     height: 100%;
     width: 100%;
@@ -98,12 +114,12 @@
     background-color: black;
 }
 
-.bg-black-30{
-    background-color:rgba(0,0,0,.3);
+.bg-black-30 {
+    background-color: rgba(0,0,0,.3);
 }
 
-.bg-test {
-    background-color:rgb(233,235,238);
+.bg-aliceblue {
+    background-color: aliceblue;
 }
 
 .box-shadow {
@@ -126,7 +142,9 @@ hr.level-break-clubs {
     border: none;
     border-top: solid .1rem;
     border-color: #343a40;
-    margin-top: 2.5rem;
+    background-color: inherit;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto
 }
@@ -138,10 +156,10 @@ hr.level-break-clubs {
         position: relative;
         top: -.8em;
         display: inline-block;
-        padding: 0 .25em;
+        padding: 0 .25rem;
         font-weight: 900;
-        font-size: 2em;
-        background-color: #fff;
+        font-size: 2rem;
+        background-color: inherit;
         color: #343a40;
     }
 
@@ -161,8 +179,8 @@ hr.level-break-clubs {
         content: "♧";
     }
 
-.slash-icon::after{
-    content:"/";
+.slash-icon::after {
+    content: "/";
 }
 
 .official-website-icon {
@@ -170,6 +188,6 @@ hr.level-break-clubs {
     width: 1.3rem;
 }
 
-.text-nobreak{
-    display:inline-block;
+.text-nobreak {
+    display: inline-block;
 }
