@@ -14,6 +14,13 @@
     z-index: -999;
 }
 
+#background-mask {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -99;
+}
+
 .navbar .active {
     font-weight: bold;
     border: 1px solid;
@@ -118,6 +125,14 @@
     background-color: rgba(0,0,0,.3);
 }
 
+.bg-black-40 {
+    background-color: rgba(0,0,0,.3);
+}
+
+.bg-black-50 {
+    background-color: rgba(0,0,0,.3);
+}
+
 .bg-aliceblue {
     background-color: aliceblue;
 }
@@ -141,7 +156,8 @@ hr.level-break-clubs {
     text-align: center;
     border: none;
     border-top: solid .1rem;
-    border-color: #343a40;
+    color: rgba(240, 248, 255,1);
+    border-color: rgba(240, 248, 255,1);
     background-color: inherit;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -159,8 +175,8 @@ hr.level-break-clubs {
         padding: 0 .25rem;
         font-weight: 900;
         font-size: 2rem;
-        background-color: inherit;
-        color: #343a40;
+        /*background-color: inherit;*/
+        color: inherit;
     }
 
     hr.level-break-spades::after {
