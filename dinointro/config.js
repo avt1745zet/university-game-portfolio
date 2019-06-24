@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":5,"title":"","author":"","fileName":"dino_intro.pdf","bounds":[[1213,889],[1213,889],[1213,889],[1213,889],[1213,889]],"bookmarks":[],"thumbnailType":"jpg","pageType":"html","pageLabels":[]};
