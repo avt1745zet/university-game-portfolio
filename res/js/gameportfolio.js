@@ -30,7 +30,6 @@
     /*
      * Scroll show.
      */
-
     hideJsScrollShow();// at start.
 
     showJsScrollShowIfInWindow();// at start.
@@ -71,3 +70,28 @@ function elementOffsetInWindow(target, percentage = 10, callback) {
         }
     });
 }
+
+/*
+ * Auto change bg.
+ */
+$(document).ready(function () {
+    $(".js-bg-changer").each(function () {
+        var target = this;
+        var interval = $(target).data("interval");
+        var bgNameArray = $(target).data("bg-name").split(",");
+        var bgFolderPath = $(target).data("path");
+        var index = 0;
+
+        setTimeout(function () { loop(); }, interval);
+
+        function loop() {
+            var bgPath = "url(" + bgFolderPath.concat("/").concat(bgNameArray[index]) + ")";
+            $(target).css("background-image", bgPath);
+            if (index === bgNameArray.length - 1)
+                index = 0;
+            else
+                index += 1;
+            setTimeout(function () { loop(); }, interval);
+        }
+    });
+});
